@@ -1,1 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Privacy Policy for XAPK Manager." />
+  <title>Privacy Policy — XAPK Manager</title>
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --card: rgba(255,255,255,.92);
+      --text: #172033;
+      --muted: #667085;
+      --line: #e6eaf0;
+      --accent: #2f7cf6;
+      --accent2: #6a5cff;
+      --shadow: 0 18px 50px rgba(20, 35, 70, .10);
+      --radius: 22px;
+    }
 
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1218;
+        --card: rgba(24,29,38,.92);
+        --text: #f3f6fb;
+        --muted: #a8b0bf;
+        --line: #2a313d;
+        --accent: #6aa2ff;
+        --accent2: #8c7cff;
+        --shadow: 0 18px 50px rgba(0,0,0,.28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(47,124,246,.10), transparent 32rem),
+        radial-gradient(circle at top right, rgba(106,92,255,.10), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.68;
+    }
+
+    .wrap {
+      width: min(940px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    .hero {
+      padding: 42px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, #2f7cf6 0%, #6a5cff 100%);
+      color: white;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 999px;
+      background: rgba(255,255,255,.12);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    h1 {
+      margin: 18px 0 10px;
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 700px;
+      color: rgba(255,255,255,.88);
+      font-size: 17px;
+    }
+
+    .meta {
+      margin-top: 22px;
+      font-size: 14px;
+      color: rgba(255,255,255,.78);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 32px;
+      margin-top: 18px;
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      letter-spacing: -.02em;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 18px;
+    }
+
+    p { margin: 10px 0; }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li { margin: 8px 0; }
+
+    .toc a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    .toc a:hover { text-decoration: underline; }
+
+    .note {
+      border-left: 4px solid var(--accent);
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: rgba(47,124,246,.08);
+      margin-top: 16px;
+    }
+
+    code {
+      background: rgba(127,127,127,.12);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    a {
+      color: var(--accent);
+      word-break: break-word;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 28px 12px 0;
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 20px, 940px); padding-top: 16px; }
+      .hero { padding: 28px 22px; border-radius: 22px; }
+      .card { padding: 24px 20px; border-radius: 18px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="badge">XAPK Manager · Privacy</span>
+      <h1>Privacy Policy</h1>
+      <p>
+        This Privacy Policy explains how XAPK Manager handles information when you use the application.
+        We aim to keep data processing limited, transparent, and relevant to the app's functionality.
+      </p>
+      <div class="meta">Effective date: August 27, 2026</div>
+    </section>
+
+    <section class="card toc">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#data">Information and data</a></li>
+        <li><a href="#local">Local file and app processing</a></li>
+        <li><a href="#permissions">Permissions</a></li>
+        <li><a href="#third-parties">Third-party services</a></li>
+        <li><a href="#children">Children's privacy</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </section>
+
+    <section class="card" id="overview">
+      <h2>1. Overview</h2>
+      <p>
+        XAPK Manager is an Android utility designed to help users work with application packages
+        and related files. Depending on the features available in your version of the app, this may
+        include viewing apps installed on the device, extracting or backing up application packages,
+        managing APK/XAPK-related files, viewing package information, sharing files, or starting
+        package installation.
+      </p>
+      <p>
+        XAPK Manager does not require you to create an account to use its core functionality.
+      </p>
+    </section>
+
+    <section class="card" id="data">
+      <h2>2. Information and data</h2>
+      <p>
+        The app may access information that is necessary to provide its features, such as:
+      </p>
+      <ul>
+        <li>information about applications and packages available on your device;</li>
+        <li>application names, package names, versions, icons, and related technical metadata;</li>
+        <li>APK, XAPK, APKS, APKM, or other files that you choose to open, manage, extract, save, or share;</li>
+        <li>device storage locations that you explicitly select through Android's system file picker or permissions;</li>
+        <li>basic technical information needed for app stability, diagnostics, advertising, or analytics if such services are enabled in the app.</li>
+      </ul>
+      <p>
+        We do not ask you to provide sensitive personal information such as your name, postal address,
+        contacts, passwords, private messages, or payment card details as part of the app's core functionality.
+      </p>
+    </section>
+
+    <section class="card" id="local">
+      <h2>3. Local file and app processing</h2>
+      <p>
+        Package extraction, file management, and similar operations are intended to take place locally
+        on your device unless a feature explicitly tells you otherwise.
+      </p>
+      <p>
+        Files that you select are not automatically uploaded to us simply because you open, extract,
+        manage, or install them through XAPK Manager.
+      </p>
+      <div class="note">
+        You remain responsible for ensuring that you have the right to extract, copy, share, install,
+        or otherwise use application packages and files processed with the app.
+      </div>
+    </section>
+
+    <section class="card" id="permissions">
+      <h2>4. Android permissions</h2>
+      <p>
+        XAPK Manager may request Android permissions or system access that are required for specific
+        features. Depending on your Android version and the functionality you use, these can include:
+      </p>
+      <ul>
+        <li>access to files or folders that you select;</li>
+        <li>access needed to display information about installed applications;</li>
+        <li>permission to request installation of application packages;</li>
+        <li>notifications or other standard Android permissions required by enabled features.</li>
+      </ul>
+      <p>
+        Permissions are used only for the purposes described by the app and the Android permission
+        prompt. You can review or revoke permissions at any time from Android Settings.
+      </p>
+    </section>
+
+    <section class="card" id="third-parties">
+      <h2>5. Third-party services</h2>
+      <p>
+        XAPK Manager may use third-party services that help distribute, maintain, analyze, monetize,
+        or improve the app. These services may process technical information according to their own
+        privacy policies.
+      </p>
+
+      <h3>Google Play services</h3>
+      <p>
+        The app is distributed through Google Play and may use Google Play services for functionality
+        such as app distribution, billing, security, or other platform features.
+      </p>
+      <p>
+        Google Privacy Policy:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+          https://policies.google.com/privacy
+        </a>
+      </p>
+
+      <!--
+        If your production build uses Google Mobile Ads / AdMob, Firebase Analytics,
+        Firebase Crashlytics, RevenueCat, or another SDK, add it here before publishing.
+        Delete this comment once the policy is finalized.
+      -->
+    </section>
+
+    <section class="card" id="children">
+      <h2>6. Children's privacy</h2>
+      <p>
+        XAPK Manager is a general-purpose utility and is not specifically directed to children.
+        We do not knowingly request children to submit personal information directly through the app.
+      </p>
+    </section>
+
+    <section class="card" id="security">
+      <h2>7. Data security</h2>
+      <p>
+        We take reasonable measures to limit unnecessary access to information and to use platform
+        security features provided by Android and Google Play. However, no method of electronic
+        storage or transmission can be guaranteed to be completely secure.
+      </p>
+    </section>
+
+    <section class="card" id="retention">
+      <h2>8. Data retention</h2>
+      <p>
+        Information processed locally by the app generally remains under your control on your device.
+        If third-party services are enabled, their retention practices are governed by their respective
+        privacy policies and service terms.
+      </p>
+    </section>
+
+    <section class="card" id="changes">
+      <h2>9. Changes to this Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy when the app, legal requirements, or third-party services
+        change. The updated version will be published on this page with a revised effective date.
+      </p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>10. Contact</h2>
+      <p>
+        If you have questions about this Privacy Policy or privacy-related matters concerning XAPK Manager,
+        please contact:
+      </p>
+      <p><strong>Email:</strong> <a href="mailto:manchuk.yulias@gmail.com">manchuk.yulias@gmail.com</a></p>
+    </section>
+
+    <footer>
+      © 2026 XAPK Manager. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
